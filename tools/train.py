@@ -37,11 +37,11 @@ if __name__ == "__main__":
     if uniform_output_enabled:
         if os.path.exists(
                 os.path.join(config["Global"]["output_dir"],
-                             "train_results.json")):
+                             "train_result.json")):
             try:
                 os.remove(
                     os.path.join(config["Global"]["output_dir"],
-                                 "train_results.json"))
+                                 "train_result.json"))
             except:
                 pass
         config_dict = convert_to_dict(config)
